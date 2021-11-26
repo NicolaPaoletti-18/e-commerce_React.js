@@ -1,13 +1,30 @@
-import './CartScreen.css'; 
+import "./CartScreen.css";
 
+//components
+
+import CartItem from "../components/CartItem";
 
 const CartScreen = () => {
   return (
-    <div className='cartscreen'>
-      CartScreen
-
+    <div className="cartscreen">
+      <div className="cartscreen__left">
+        <h2>Shopping Cart</h2>
+        <CartItem />
+        <CartItem />
+        <CartItem />
+        <CartItem />
+      </div>
+      <div className="cartscreen__right">
+        <div className="cartscreen__info">
+          <p> Subtotal (0) items</p>
+          <p>$499.99</p>
+        </div>
+        <div>
+          <button>Proced to Checkout</button>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default CartScreen; 
+export default CartScreen;
